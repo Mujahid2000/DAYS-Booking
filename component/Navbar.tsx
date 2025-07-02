@@ -6,7 +6,7 @@ import { useState } from "react"
 
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -138,7 +138,8 @@ export default function Navbar() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-            <div className="flex flex-col space-y-6 mt-6">
+            <SheetTitle></SheetTitle>
+            <div className="flex flex-col space-y-6 mt-6 px-4">
               {/* Mobile Navigation Links */}
               <div className="flex flex-col space-y-4">
                 <SheetClose asChild>
