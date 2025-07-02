@@ -14,14 +14,14 @@ export default function Footer() {
               <Image
                 src="https://res.cloudinary.com/diez3alve/image/upload/v1751306386/Group_1707478001_kr4x3z.png"
                 alt="DayF Booking Logo"
-                width={120}
+                width={90}
                 height={40}
                 className="h-10 w-auto"
               />
             </div>
-        <div className="flex justify-between gap-8 lg:gap-12 ">
+        <div className="flex flex-col md:flex-row justify-between gap-8 lg:gap-12 ">
           {/* Left Section - Logo and Description */}
-          <div className=" border-r pr-48 space-y-6 ">
+          <div className=" sm:border-b md:border-b-0 py-3 md:border-r md:pr-48 space-y-6 ">
             
 
             {/* Description */}
@@ -66,7 +66,7 @@ export default function Footer() {
 
             
           </div>
-<div className="flex justify-between gap-16 ">
+<div className="flex flex-col md:flex-row justify-between gap-16 ">
 {/* Middle Section - Navigation Links */}
           <div className="">
             <div className="space-y-2">
